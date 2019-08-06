@@ -1,7 +1,7 @@
 pool:
   vmImage: 'Ubuntu-16.04'
   demands:
-    - npm 
+    - npm
 
 variables:
   buildConfiguration: 'Release'
@@ -31,7 +31,7 @@ steps:
 
 - task: DotNetCoreCLI@2
   displayName: 'Restore project dependencies'
-  inputs: 
+  inputs:
     command: 'restore'
     projects: '**/*.csproj'
 
